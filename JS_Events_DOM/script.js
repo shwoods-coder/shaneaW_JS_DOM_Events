@@ -23,3 +23,16 @@ document.addEventListener("DOMContentLoaded", function () {
     btn.classList.toggle("glow");
   }
   
+  const modeBtn = document.getElementById("modeToggle");
+
+modeBtn.addEventListener("click", function () {
+  document.body.classList.toggle("dark-mode");
+
+  if (document.body.classList.contains("dark-mode")) {
+    modeBtn.innerText = "Light Mode";
+  } else {
+    modeBtn.innerText = "Dark Mode";
+  }
+});
+
+  
